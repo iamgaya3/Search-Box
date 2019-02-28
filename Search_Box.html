@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Search Page
+		</title>
+		<style>
+			body {
+				background-image: url(bg.jpg);
+				-webkit-background-size:cover;
+				background-size:cover;
+				background-position:center center;
+				background-repeat:no-repeat;
+				height :100vh;
+			}
+			.menu-area{
+				background: #444444;
+				height : 60px;
+				margin-top :60px;
+			}
+			.menu-area ul{
+				float : left;
+				list-style : none;
+				margin : 0;
+				padding :0;
+				width : 50%;
+			}
+			.menu-area li{
+				display : inline-block;
+			}
+			.menu-area a{
+				color : #ffffff;
+				display: inline-block;
+				line-height:40px;
+				padding:10px 15px;
+				text-decoration : none;
+				text-transform: uppercase;
+			}
+			input[type=text]{
+				background-image: url(se.jpg);
+				background-repeat:no-repeat;
+				background-position: 0px 0px;
+				padding:10px 12px 14px 16px;
+				border-radius: 25px;
+				margin-top: 5px;
+				outline:none;
+				width: 160px;
+			}
+			input[type=text]:focus{
+				width:450px;
+			}
+					
+		</style>
+	</head>
+	<body>
+		<div class="menu-area">
+			<ul>
+				<li><a href="Search_Box.html">Home</a></li>
+				<li><a href="http://www.omdbapi.com/">About</a></li>
+				<li><a href="contact.html" target="main">Contact</a></li>
+			</ul>
+			<form action="http://www.google.com/" method="get" id = "search-box">
+				<input type="text" class="search" name="q" size="20" maxlength="120" placeholder="Search...">
+			</form>
+		</div>
+	</body>
+</html>
